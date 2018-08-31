@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    position: relative;
+}
+
+section>span {
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red;
+}
+
+section.blocks {
+    display: flex;
+    flex-direction: row;
+}
+
+section.blocks>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+}
+
+@keyframes anim1 {
+    0% {
+        top: 25px;
+        left: 0px;
+    }
+    100% {
+        top: 25px;
+        left: calc(100% - 10px);
+    }
+}
+
+@keyframes anim2 {
+    0% {
+        top: 75px;
+        left: 0px;
+    }
+    100% {
+        top: 75px;
+        left: 130px;
+    }
+}
+
+@keyframes anim3 {
+    0% {
+        top: 130px;
+        left: 0px;
+    }
+    100% {
+        top: 130px;
+        left: 130px;
+    }
+}
+
+@keyframes anim4 {
+    0% {
+        top: 24px;
+        left: 23px;
+    }
+    100% {
+        top: 130px;
+        left: 23px;
+    }
+}
+
+@keyframes anim5 {
+    0% {
+        top: 24px;
+        left: 75px;
+    }
+    100% {
+        top: 130px;
+        left: 75px;
+    }
+}
+
+@keyframes anim6 {
+    0% {
+        top: 24px;
+        left: 130px;
+    }
+    100% {
+        top: 130px;
+        left: 130px;
+    }
+}
+
+@keyframes anim7 {
+    0% {
+        top: 25px;
+        left: 25px;
+    }
+    100% {
+        top: 130px;
+        left: 130px;
+    }
+}
+
+@keyframes anim8 {
+    0% {
+        top: 130px;
+        left: 23px;
+    }
+    100% {
+        top: 25px;
+        left: 130px;
+    }
+}
