@@ -1,0 +1,126 @@
+        body {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        section {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: gray;
+            position: relative;
+        }
+        
+        section>span {
+            position: absolute;
+            top: calc(50% - 15px);
+            left: calc(50% - 15px);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #fff;
+        }
+        
+        div.seconds {
+            position: absolute;
+            top: 0px;
+            left: calc(50% - 1px);
+            height: 250px;
+            width: 2px;
+            transform-origin: bottom;
+            background: #fff;
+            animation: rotate 60s infinite steps(60);
+        }
+        
+        div.minutes {
+            position: absolute;
+            top: 50px;
+            left: calc(50% - 2px);
+            height: 200px;
+            width: 4px;
+            transform-origin: bottom;
+            background: #fff;
+            animation: rotateminutes 3600s infinite linear;
+        }
+        
+        div.hours {
+            position: absolute;
+            top: 100px;
+            left: calc(50% - 4px);
+            height: 150px;
+            width: 8px;
+            transform-origin: bottom;
+            background: #fff;
+            animation: rotatehours 43200s infinite linear;
+        }
+        
+        p {
+            margin: 0px;
+            position: absolute;
+            top: 0px;
+            left: calc(50% - 2px);
+            height: 250px;
+            width: 4px;
+            transform-origin: bottom;
+            display: block;
+            background: -moz-linear-gradient(90deg, rgba(128, 128, 128, 1) 0%, rgba(128, 128, 128, 1) 90%, rgba(255, 255, 255, 1) 100%);
+            /* ff3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(10%, rgba(128, 128, 128, 1)), color-stop(100%, rgba(128, 128, 128, 1)));
+            /* safari4+,chrome */
+            background: -webkit-linear-gradient(90deg, rgba(128, 128, 128, 1) 0%, rgba(128, 128, 128, 1) 90%, rgba(255, 255, 255, 1) 100%);
+            /* safari5.1+,chrome10+ */
+            background: -o-linear-gradient(90deg, rgba(128, 128, 128, 1) 0%, rgba(128, 128, 128, 1) 90%, rgba(255, 255, 255, 1) 100%);
+            /* opera 11.10+ */
+            background: -ms-linear-gradient(90deg, rgba(128, 128, 128, 1) 0%, rgba(128, 128, 128, 1) 90%, rgba(255, 255, 255, 1) 100%);
+            /* ie10+ */
+            background: linear-gradient(0deg, rgba(128, 128, 128, 1) 0%, rgba(128, 128, 128, 1) 90%, rgba(255, 255, 255, 1) 100%);
+            /* w3c */
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#808080', GradientType=0);
+            /* ie6-9 */
+        }
+        
+        p:nth-child(1) {
+            transform: rotate(30deg);
+        }
+        
+        p:nth-child(2) {
+            transform: rotate(60deg);
+        }
+        
+        p:nth-child(3) {
+            transform: rotate(90deg);
+        }
+        
+        p:nth-child(4) {
+            transform: rotate(120deg);
+        }
+        
+        p:nth-child(5) {
+            transform: rotate(150deg);
+        }
+        
+        p:nth-child(6) {
+            transform: rotate(180deg);
+        }
+        
+        p:nth-child(7) {
+            transform: rotate(210deg);
+        }
+        
+        p:nth-child(8) {
+            transform: rotate(240deg);
+        }
+        
+        p:nth-child(9) {
+            transform: rotate(270deg);
+        }
+        
+        p:nth-child(10) {
+            transform: rotate(300deg);
+        }
+        
+        p:nth-child(11) {
+            transform: rotate(330deg);
+        }
